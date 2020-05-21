@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <script src='~/js/site.js'></script>
+    <link rel='stylesheet' type='text/css' href='~/lib/bootstrap/dist/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='~/css/site.css'>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <a class="TopNavLink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    </div>
+    <div id='main' class="container-fluid">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+    <script>window.onload = initialize();</script>
+</body>
+</html>

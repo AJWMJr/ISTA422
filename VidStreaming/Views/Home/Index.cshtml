@@ -1,0 +1,30 @@
+﻿@model VidStreaming.Models.ViewModel
+
+@{ 
+    var sources = new string[Model.Videos.Count()];
+    int i = 0;
+    foreach(var video in Model.Videos)
+    {
+        sources[i] = video.Source;
+        i++;
+    }
+}
+    <div class="col-sm-2">
+        <a class='navLink' href='#'>Videos</a>
+        <a class='navLink' href='#'>Favorites</a>
+        <a class='navLink' href='#'>Playlists</a>
+    </div>
+    <div class="col-sm-10">
+        @foreach (var video in Model.Videos)
+        {
+            i = 0;
+            <div class='vid'>
+                <iframe class='video' height="200px" src=@sources[i] frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class='comment'>@video.Description</div>
+            </div>
+            i++;
+        }
+    </div>
+</div>

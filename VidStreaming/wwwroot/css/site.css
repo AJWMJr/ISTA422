@@ -1,0 +1,112 @@
+﻿.container-fluid {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.navbar {
+    background: rgb(86,86,156);
+    background: linear-gradient(rgba(86,86,156,1) 0%, rgba(27,27,92,1) 100%);
+}
+
+.TopNavLink {
+    display: inline-block;
+    border-radius: 5px;
+    border: solid #232340 1px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+    .TopNavLink:hover {
+        text-decoration: none;
+        background-color: #56569c;
+    }
+
+    .TopNavLink:active {
+        text-decoration: none;
+        background: rgb(86,86,156);
+        background: linear-gradient(rgba(27,27,92,1) 0%, rgba(86,86,156,1) 100%);
+    }
+
+    .TopNavLink:visited { color: white; }
+
+#main {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 19pt;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .row.no-gutters > [class^="col-"],
+    .row.no-gutters > [class*=" col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+#top {
+    width: 100%;
+    background-color: #f1ebda;
+    border-bottom: 1px solid #888888;
+}
+
+.navLink {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #56569c;
+    width: 100%;
+}
+
+    .navLink:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#d9d9d9;
+    }
+
+    .navLink:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navLink:visited { color: black; }
+
+.vid {
+    width: 355px;
+    margin: 10px;
+    float: left;
+    font-size: 16pt;
+    background: rgb(235,235,246);
+    background: linear-gradient(90deg, rgba(235,235,246,1) 0%, rgba(250,250,255,1) 100%);
+    box-shadow: 0 0 10px #888888;
+    border-radius: 5px;
+}
+
+.vidR {
+    width: 80%;
+    margin: auto;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.video {
+    min-height: 180px;
+    max-height: 650px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.comment {
+    display: inline-block;
+    padding: 20px;
+    height: 100px;
+    width: 100%;
+}
